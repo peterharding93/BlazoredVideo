@@ -272,8 +272,8 @@ namespace Blazored.Video
 					RateChangeEvent.InvokeAsync(videoData.State);
 					break;
 				case VideoEvents.Seeked:
-					Seeking?.Invoke(videoData.State);
-					SeekingEvent.InvokeAsync(videoData.State);
+					Seeked?.Invoke(videoData.State);
+					SeekedEvent.InvokeAsync(videoData.State);
 					break;
 				case VideoEvents.Seeking:
 					Seeking?.Invoke(videoData.State);
